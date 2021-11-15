@@ -13,4 +13,6 @@ Out_wave = sind(2*pi*freq*t);
 
 
 %% Graphing
-plot(t, Out_wave, 'o-', 'LineStyle', '-', 'Color', [0.5 0.1 0.03], 'LineWidth', 0.78, 'MarkerSize', 3);
+hf = figure('Name', 'hxs', 'Units', 'centimeters', 'Position', [15 5 9.10 10.3]);
+hf_axes = axes(hf);
+plot(hf_axes, t, Out_wave, 'o-', 'LineStyle', '-', 'Color', [0.5 0.1 0.03], 'LineWidth', 0.78, 'MarkerSize', 3);
